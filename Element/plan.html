@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan</title>
+    <style>
+        .serveContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2vw 10vw;
+            /* flex-wrap: wrap; */
+        }
+        .serveItms{
+            height: 400px;
+            min-width: 20%;
+            transition: all .5s;
+            overflow: hidden;
+            position: relative;
+        }
+        .serveItms:hover img{
+            transform: scale(1.5);
+        }
+        .serveItms:hover{
+            min-width: 50%;
+        }
+        
+        .serveItms>img{
+            transition: all .5s;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .serveItms>.itmOverlay{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            /* display: none; */
+            z-index: 554;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .serveItms:hover .itmOverlay{
+            opacity: 0.6;
+        }
+        .itmOverlay>div{
+            text-align: center;
+            /* border: 2px solid white; */
+            position: relative;
+            height: 150px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .itmOverlay>div>h2{
+            position: absolute;
+            transition: all 1s;
+            top: -100px;
+            font-size: 2.2rem;
+            color: white;
+        }
+        .itmOverlay>div>p{
+            position: absolute;
+            bottom: -100px;
+            transition: all 2s;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .itmOverlay:hover h2{
+            top: 10px;
+            left: 20px;
+        }
+        .itmOverlay:hover p{
+            bottom: 5px;
+            left: 20px;
+        }
+     
+        @media(max-width:800px){
+            .serveContainer{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="serveContainer">
+        <div class="serveItms">
+            <div class="itmOverlay">
+                <div>
+                    <h2>Date Plan</h2>
+                    <p>Romantic Rendezvous: Unforgettable Date Nights at Kylo Resort.</p>
+                </div>
+            </div>
+            <img src="../images/Birthday.webp" alt="">
+        </div>
+        <div class="serveItms">
+            <div class="itmOverlay">
+                <div>
+                    <h2>Date Plan</h2>
+                    <p>Romantic Rendezvous: Unforgettable Date Nights at Kylo Resort.</p>
+                </div>
+            </div>
+
+            <img src="../images/web4.webp" alt="">
+
+        </div>
+        <div class="serveItms">
+            <div class="itmOverlay">
+                <div>
+                    <h2>Date Plan</h2>
+                    <p>Romantic Rendezvous: Unforgettable Date Nights at Kylo Resort.</p>
+                </div>
+            </div>
+            <img src="../images/room.webp" alt="">
+
+        </div>
+    </div>
+</body>
+</html>

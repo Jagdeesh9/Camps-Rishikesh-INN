@@ -42,7 +42,7 @@
 
 /* navigation start --------------------------------------------------------------------------------------------- */
 nav{
-    padding: 2vw 10vw;
+    padding: 1vw 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -159,7 +159,7 @@ nav{
 /* hero end --------------------------------------------------------------------------------------------- */
 /* accomondation activity start --------------------------------------------------------------------------------------------- */
 .actContainer{
-    padding: 3vw 10vw;
+    padding: 10vh 10vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -196,7 +196,7 @@ nav{
 
 /* video phot section start -------------------------------------------------------------------- */
 .vidContainer{
-    padding: 5vw 10vw;
+    padding: 10vh 10vw;
     background-color: #3B596C;
     display: flex;
     align-items: center;
@@ -208,7 +208,7 @@ nav{
     text-decoration: none;
 }
 .vidItms{
-    border: 2px solid white;
+    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,7 +226,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2vw 10vw;
+    padding: 10vh 10vw;
     /* flex-wrap: wrap; */
 }
 .serveItms{
@@ -235,6 +235,7 @@ nav{
     transition: all .5s;
     overflow: hidden;
     position: relative;
+    flex-grow: 1;
 }
 .serveItms:hover img{
     transform: scale(1.5);
@@ -296,7 +297,7 @@ nav{
     left: 20px;
 }
 
-@media(max-width:800px){
+@media(max-width:1000px){
     .serveContainer{
         flex-wrap: wrap;
     }
@@ -306,7 +307,7 @@ nav{
 
 /* DOMES TITLE starts--------------------------------------------------------------------------------- */
 .Titlecontainer{
-    padding: 2vw 10vw;
+    padding: 10vh 10vw;
     background-color: white;
     display: flex;
     align-items: center;
@@ -327,7 +328,7 @@ nav{
 
 /* carsd section start--------------------------------------------------------------------------------- */
 .cardContainer{
-    padding: 2vw 10vw;
+    padding: 10vh 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,6 +345,7 @@ nav{
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+    flex-grow: 1;
 }
 .cardItms>.image{
     width: 100%;
@@ -353,7 +355,8 @@ nav{
 }
 .cardItms>.image>img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    aspect-ratio: 4/3;
     transition: all .5s;
     border-radius: 5px;
 }
@@ -402,7 +405,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     gap: 15vw;
-    padding: 2vw 10vw;
+    padding: 10vh 10vw;
 }
 .teamItms{
     max-width: 200px;
@@ -436,7 +439,7 @@ nav{
 
 /* cams section start--------------------------------------------------------------------------------- */
 .campContainer{
-    padding: 2vw 10vw;
+    padding: 10vh 10vw;
     display: flex;
     justify-content: center;
     gap: 3vw;

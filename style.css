@@ -80,7 +80,7 @@ nav{
     color:#28485D;
     font-weight: bold;
 }
-.menu>ul>button{
+.menu>ul>a>button{
     height: 60px;
     width: 130px;
     font-size: 1.3rem;
@@ -92,6 +92,7 @@ nav{
     border-radius: 5px;
     transition: all .2s;
     font-family: calibri;
+    cursor: pointer;
 }
 .menu>ul>button:hover{
     background-color:aqua;
@@ -313,6 +314,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 .Titlecontainer>h2{
     font-size: 2rem;
@@ -322,6 +324,7 @@ nav{
 .Titlecontainer>span{
     font-size: 1.2rem;
     font-weight: 400;
+    text-align: center;
 }
 /* DOMES TITLE ends--------------------------------------------------------------------------------- */
 
@@ -498,6 +501,9 @@ footer{
 .footItms>ul>li{
     padding: 5px;
 }
+.footItms>ul>h2{
+    font-size: 1.5rem;
+}
 .footItms>ul>li>a,.footItms>ul>span{
     text-decoration: none;
     color: white;
@@ -516,3 +522,9 @@ footer{
     margin-top: 50px;
 }
 /* footer section  ends--------------------------------------------------------------------------------- */
+
+
+/* packages -------------------------------------------------------------------------------------------- */
+.fs-1{
+    font-size: 1.5rem;
+}

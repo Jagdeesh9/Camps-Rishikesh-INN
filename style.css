@@ -528,3 +528,45 @@ footer{
 .fs-1{
     font-size: 1.5rem;
 }
+.pt{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* packages end ---------------------------------------------------------------------------------------- */
+
+/* whatsapp  btn ---------------------------------------------------------------------------------------- */
+#whatsappBtn{
+    padding: 3px 15px;
+    background-color: #2FBD2C;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size:30px;
+    color: white;
+    border-radius: 5px;
+}
+/* whatsapp  btn end ---------------------------------------------------------------------------------------- */
+
+
+/* gallary------------------------------------------------------------------------------------------ */
+.fullImg{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(244, 191, 12,0.7);
+    position:fixed;
+    top: 0;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 10vw;
+    display: none;
+  }
+  .times{
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+/* gallary ends------------------------------------------------------------------------------------------ */

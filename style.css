@@ -338,11 +338,14 @@ nav{
     gap: 5vw;
     flex-wrap: wrap;
 }
+@media(max-width:768px){
+   
+}
 .cardContainer>.cardItms{
     padding: 20px;
     /* border: 2px solid black; */
     box-shadow: 0px 0px 10px gray;
-    max-width: 350px;
+    max-width: 360px;
     border-radius: 5px;
     display: flex;
     /* align-items: center; */
@@ -529,7 +532,7 @@ footer{
     font-size: 1.5rem;
 }
 .pt{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 /* packages end ---------------------------------------------------------------------------------------- */
@@ -570,3 +573,85 @@ footer{
     cursor: pointer;
   }
 /* gallary ends------------------------------------------------------------------------------------------ */
+
+
+/* about starts------------------------------------------------------------------------------------------ */
+.parallax{
+    height: 600px;
+    background-image: url('./images/6.jpeg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallax>.paraOverlay{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paraOverlay>h2{
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: -2500px;
+    
+    transition: all 2s;
+    font-weight: bold;
+}
+.paraOverlay:hover h2{
+    left: 250px;
+}
+/* about end------------------------------------------------------------------------------------------ */
+
+
+/* Packages Starts------------------------------------------------------------------------------------------ */
+.packageContainer{
+    padding: 10vh 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    flex-wrap: wrap-reverse;
+}
+.packageContainer>div{
+    max-width: 400px;
+    text-align: center;
+
+}
+.packageContainer>div>img{
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.packageTable>{
+    background-color: yellow;
+    padding: 10vh 5vw;
+}
+.packageTable{
+    padding: 10vh 10vw;
+}
+.packageTable>table{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 1px solid black;
+}
+.packageTable>table>thead{
+    background-color: black;
+    color: white;
+}
+.packageTable>table>thead>tr>th{
+    border: 2px solid whitesmoke;
+    padding: 2vw;
+    border: 1px solid grey;
+}
+.packageTable>table>tbody>tr>td{
+    padding: 2vw;
+    border: 1px solid grey;
+}
+
+
+/* Packages ends------------------------------------------------------------------------------------------ */
+
+
+

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@529&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: calibri;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* contact line start --------------------------------------------------------------------------------------------- */
@@ -583,54 +585,30 @@ footer{
 
 
 /* gallary------------------------------------------------------------------------------------------ */
-.fullImg{
-    min-height: 100vh;
+.gallery {
+    padding: 5vh 10vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.gallery img {
     width: 100%;
-    background-color: rgba(244, 191, 12,0.7);
-    position:fixed;
-    top: 0;
-    z-index: 99999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10vh 10vw;
-    display: none;
-  }
-  .times{
-    font-size: 50px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-  }
+    height: auto;
+    aspect-ratio: 1/1;
+    cursor: pointer; /* Change cursor to indicate images are clickable */
+}   
 /* gallary ends------------------------------------------------------------------------------------------ */
 
 
 /* about starts------------------------------------------------------------------------------------------ */
-.parallax{
-    height: 600px;
-    background-image: url('./images/6.jpeg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
+
+.aboutContainer{
+    padding:0 10vw 10vh 10vw;
+    background-color:#DCE2E5;
 }
-.parallax>.paraOverlay{
-    background-color: rgba(0,0,0,0.7);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.paraOverlay>h2{
-    font-size: 4rem;
-    color: white;
-    position: absolute;
-    left: -2500px;
-    
-    transition: all 2s;
-    font-weight: bold;
-}
-.paraOverlay:hover h2{
-    left: 250px;
+.aboutContainer>p{
+    font-size: 1.3rem;
+    padding: 20px;
 }
 /* about end------------------------------------------------------------------------------------------ */
 
@@ -649,6 +627,10 @@ footer{
     text-align: center;
 
 }
+.packageContainer>div>ul{
+    list-style: none;
+}
+
 .packageContainer>div>img{
     width: 100%;
     aspect-ratio: 4/3;
@@ -680,7 +662,9 @@ footer{
     padding: 2vw;
     border: 1px solid grey;
 }
-
+.packageTable>table>tbody>tr>td>ul{
+    list-style: none;
+}
 
 /* Packages ends------------------------------------------------------------------------------------------ */
 
@@ -692,7 +676,7 @@ footer{
     background-color: whitesmoke;
   }
   .item{
-    background-color: black;
+    background-color:#3B596C;
     padding: 20px;
   }
 
@@ -700,5 +684,29 @@ footer{
     color: white;
   }
 /* testimonial section------------------------------------------------------------------------------------- */
+
+/* t & c section------------------------------------------------------------------------------------- */
+.termContainer{
+    padding:0 10vw 10vh 10vw;
+}
+.termContainer>p{
+    font-size: 1.5rem;
+}
+.termContainer>section{
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.termContainer>section>h2{
+    margin-bottom: 30px;
+}
+.termContainer>section>ul{
+    padding-left:2vw;
+}
+.termContainer>section>ul>li,.termContainer>section>p{
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+/* t & c section ends------------------------------------------------------------------------------------- */
 
 

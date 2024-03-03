@@ -6,6 +6,15 @@
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+:root {
+    --main-color: #FD8549;
+    --bg-color: #F6FDFE;
+    --bg-dark:#C8F1F3;
+    }
+    ::selection{
+        background-color:var(--main-color);
+        color: black;
+    }
 
 /* contact line start --------------------------------------------------------------------------------------------- */
 .contactLine{
@@ -166,7 +175,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #DCE2E5;
+    background-color: var(--bg-color);
     gap:20px;
     flex-wrap: wrap;
 }
@@ -231,6 +240,8 @@ nav{
     justify-content: center;
     padding: 10vh 10vw;
     /* flex-wrap: wrap; */
+    background-color: var(--bg-color);
+
 }
 .serveItms{
     height: 400px;
@@ -311,7 +322,7 @@ nav{
 /* DOMES TITLE starts--------------------------------------------------------------------------------- */
 .Titlecontainer{
     padding: 10vh 10vw;
-    background-color: white;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,6 +350,7 @@ nav{
     justify-content: center;
     gap: 5vw;
     flex-wrap: wrap;
+    background-color: var(--bg-color);
 }
 @media(max-width:768px){
    
@@ -452,6 +464,7 @@ nav{
     justify-content: center;
     gap: 3vw;
     flex-wrap: wrap;
+    background-color: var(--bg-color);
 }
 .campContainer>div{
     max-width: 500px;
@@ -507,12 +520,12 @@ footer{
     padding: 5px;
 }
 .footItms>ul>h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .footItms>ul>li>a,.footItms>ul>span{
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .footItms>ul>h2{
     margin-bottom: 2vh;
@@ -710,3 +723,185 @@ footer{
 /* t & c section ends------------------------------------------------------------------------------------- */
 
 
+
+/* new pakage ----------------------------------------------------------------------------------------- */
+.packageTitle{
+    padding: 10vh 10vw;
+    background-color: #F6FDFE;
+}
+.packageTitle>h1,.packageTitle>h2{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.packageTitle>p{
+    font-size: 1.3rem;
+    width: 60vw;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+
+}
+.packageTitle>div{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.packageTitle>div>a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+.packageTitle>div>span{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:908px){
+    .packageTitle>p{
+        width: 80vw;
+    }
+}
+.categoryContainer{
+    padding: 15vh 10vw;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.category{
+    max-width: 350px;
+    border: 1px solid aqua;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    height: 450px;
+}
+.category>img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    transform:translate(-19px,-50px);
+    border-radius: 15px;
+}
+.category>a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: all.5s;
+}
+.category>a:hover{
+    color: black;
+}
+/* new pakage end----------------------------------------------------------------------------------------- */
+
+/* raftinng----------------------------------------------------------------------------------------------- */
+.raftingCardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 10vw;
+    background-color: var(--bg-color);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.raftingCardsContainer>.raftPackage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid aqua;
+    padding: 20px 40px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+.raftingCardsContainer>.raftPackage>ul{
+    list-style: none;
+    text-align: center;
+}
+.raftingCardsContainer>.raftPackage>ul>li{
+    padding: 5px
+}
+.raftTitle{
+    padding-bottom: 1px;
+}
+.raftingCardsContainer>.raftPackage>a>button{
+    padding: 15px 50px;
+    border: none;
+    background-color: #28485D;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    transition: all .5s;
+    cursor: pointer;
+}
+.raftingCardsContainer>.raftPackage>a>button:hover{
+    background-color: var(--main-color);
+}
+.raftingPoints{
+    padding: 1vh 10vw;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.raftingPoints>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.raftingPrice{
+    padding: 2vh 10vw;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordinContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+    padding: 5vh 10vw;
+    background-color: var(--bg-color);
+    flex-wrap: wrap;
+}
+.accordinContainer>div{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+.accordion-header {
+    cursor: pointer;
+    background-color: #F4F5F6;
+    padding: 10px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+}
